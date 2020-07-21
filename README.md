@@ -34,8 +34,13 @@ mv /root/.symfony/bin/symfony /usr/local/bin/symfony
 symfony new symfony --dir=/var/www/symfony
 ```
 
+O por medio de composer si se tiene
+```
+composer install
+```
+
 ## Notas
-Puede que la creación del proyecto puede dar el siguiente fallo:
+* Puede que la creación del proyecto puede dar el siguiente fallo:
 ```
 *** Please tell me who you are.
 Run
@@ -44,3 +49,7 @@ git config --global user.name "Your Name"
 to set your account's default identity.
 ```
 Con realizar la configuración de Git que solicita se resolverá sin mayor complicación.
+
+## Troubleshootings
+* Revisar que los puertos no esten siendo ocupados por otros programas externos ya que pueden causar problemas
+* En algunas ocaciones hay que iniciar los contenedores de manera individual.
